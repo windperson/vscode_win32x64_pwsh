@@ -23,7 +23,23 @@ The benefit to use this portable development environment is providing a cleaner 
 
 ## Modify settings.json before first run
 
-The configuration file is at  **vscode_data\user-data\User\settings.json**, open it with a text editor and modify all absolute path value (default is written as `D:\\vscode_portable\\`) to match the actual path in your computer.
+1. The configuration file is at  **vscode_data\user-data\User\settings.json**, open it with a text editor and modify all absolute path value (default is written as `D:\\vscode_portable\\`) to match the actual path in your computer.
+
+2. Make sure the `data` folder symbolic link in **VSCode-win32-x64** folder is not broken (It will porint to upper directory **vscode_data**).
+
+If not, recreate the symbolic link in **VSCode-win32-x64** folder:
+```powershell
+rm data
+New-Item -ItemType SymbolicLink -Path data -Target .\..\vscode_data\
+```
+
+3. Make sure the `VSCode` symbolic link in top directory is not broken (It will point to *VSCode-win32-x64/Code.exe*).
+
+If not, recreate the symbolic link in top folder:
+```powershell
+rm VSCode
+New-Item -ItemType SymbolicLink -Path VSCode -Target .\VSCode-win32-x64\Code.exe
+```
 
 If you want to use Vim extension, be sure to un-comment the related setting below `// Vim extension settings`.
 
@@ -31,14 +47,14 @@ If you want to use Vim extension, be sure to un-comment the related setting belo
 
 Run `VSCode-win32-x64\Code.exe` or the **VSCode** symbolic link in root folder to start the portable VSCode, and install the PowerShell and (Optional) Vim extensions from the ***.vsix*** files that download before.
 
-## HOw to install PowerShell modules
+## How to install PowerShell modules
 
 This portable development environment has configure the **pwsh_modules** folder to be the first PowerShell module probing path, so we can use `Install-ModuleFast` cmdlet of [ModuleFast](https://github.com/JustinGrote/ModuleFast) to install PowerShell modules to **pwsh_modules** folder without polluting the host machine.
 
 For example, to install test framework [Pester](https://pester.dev/) and specify to install version v5.6.1 , in Integrated Terminal of VSCode, run:
 
 ```powershell
- @{ModuleName='Pester';ModuleVersion='5.6.1'} | Install-ModuleFast -Destination D:\vscode_portable\pwsh_modules
+ @{ModuleName='Pester';ModuleVersion='5.6.1'} | Install-ModuleFast -Source api.nuget.org/v3 -Destination D:\vscode_portable\pwsh_modules
 ```
 
 so the Pester module will be installed to `pwsh_modules\Pester\5.6.1` folder, and ready for using in this portable development environment.
