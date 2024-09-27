@@ -13,10 +13,10 @@ The benefit to use this portable development environment is providing a cleaner 
   - [Git Portable](https://git-scm.com/downloads/win)
   - (Optional) [NeoVim win64 zip](https://github.com/neovim/neovim/releases/tag/v0.10.1), [im-select x64 pre-build executable](https://github.com/daipeihust/im-select/tree/master/win/out/x64) if you want to use Vim extension in VSCode.
 - Extract the zip file to the desired location:
-  - VSCode to `**VSCode-win32-x64**` folder, be sure to not overwrite the `data` folder symbolic link.
-  - PowerShell to `**PowerShell-x64**` folder.
-  - Git to `**PortableGit**` folder.
-  - (Optional) Neovim to `**cli-tools\nvim-win64**` folder, and im-select.exe to `**cli-tools**` folder if you want to use Vim extension in VSCode.
+  - VSCode to **VSCode-win32-x64** folder, be sure to not overwrite the `data` folder symbolic link.
+  - PowerShell to **PowerShell-x64** folder.
+  - Git to **PortableGit** folder.
+  - (Optional) Neovim to **cli-tools\nvim-win64** folder, and im-select.exe to **cli-tools** folder if you want to use Vim extension in VSCode.
 - Download latest [PowerShell for Visual Studio Code extension install file(*.vsix*)](https://github.com/PowerShell/vscode-powershell/releases/)
 - (Optional) Download [Vim Visual Studio Code extension install file(*.vsix*)](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) if you want to use Vim extension in VSCode.
 - Download [ModuleFast v0.5.0 zip](https://github.com/JustinGrote/ModuleFast/releases/tag/v0.5.0) PowerShell module and extract to `**pwsh_modules\ModuleFast\0.5.0**` folder.
