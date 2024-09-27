@@ -1,4 +1,7 @@
-cli-tools/**/*
+cli-tools/*
+!cli-tools/Readme.md
+!cli-tools/nvim-win64
+cli-tools/nvim-win64/**/*
 !cli-tools/nvim-win64/Readme.md
 
 PortableGit/**/*
@@ -14,6 +17,10 @@ VSCode-win32-x64/**/*
 !VSCode-win32-x64/data
 !VSCode-win32-x64/Readme.md
 
-vscode_data/**/*
+vscode_data/*
 !vscode_data/Readme.md
-
+!vscode_data/user-data/
+vscode_data/user-data/*
+!vscode_data/user-data/User/
+vscode_data/user-data/User/*
+!vscode_data/user-data/User/settings.json

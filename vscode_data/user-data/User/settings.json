@@ -1,0 +1,65 @@
+{
+  "security.workspace.trust.enabled": false,
+
+  // Integrated git settings
+  "git.path": "D:\\vscode_portable\\PortableGit\\bin\\git.exe",
+  "git.enabled": true,
+
+  // Vim extension settings
+  // "vim.enableNeovim": true,
+  // "vim.autoSwitchInputMethod.defaultIM": "1033",
+  // "vim.smartRelativeLine": true,
+  // "vim.vimrc.enable": true,
+  // "vim.autoSwitchInputMethod.obtainIMCmd": "D:\\vscode_portable\\cli-tools\\im-select.exe",
+  // "vim.autoSwitchInputMethod.switchIMCmd": "D:\\vscode_portable\\cli-tools\\im-select.exe {im}",
+  // "vim.autoSwitchInputMethod.enable": true,
+  // "vim.vimrc.path": "D:\\vscode_portable\\vim_config\\vscode.vimrc",
+  // "vim.neovimPath": "D:\\vscode_portable\\cli-tools\\nvim-win64\\bin\\nvim.exe",
+  // "vim.handleKeys": {
+  //   "<C-d>": true,
+  //   "<C-k>": false,
+  //   "<C-p>": false,
+  //   "<C-s>": false,
+  //   "<C-w>": false,
+  //   "<C-z>": false
+  // },
+
+  // Integrated terminal settings
+  "terminal.integrated.useWslProfiles": false,
+  "terminal.integrated.env.windows": {
+    "POWERSHELL_TELEMETRY_OPTOUT": "true",
+    "POWERSHELL_UPDATECHECK": "Off",
+    "PATH": "D:\\vscode_portable\\PortableGit\\bin;D:\\vscode_portable\\PortableGit\\cmd;${env:PATH}",
+    "PSModulePath": "D:\\vscode_portable\\pwsh_modules"
+  },
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": null,
+    "bundled-pwsh": {
+      "title": "Bundled pwsh",
+      "path": "D:\\vscode_portable\\PowerShell-x64\\pwsh.exe",
+      "args": [
+        "-nol",
+        "-nop",
+        "-ex",
+        "Unrestricted"
+      ]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "bundled-pwsh",
+
+  // PowerShell extension settings
+  "powershell.powerShellAdditionalExePaths": {
+    "bundled-pwsh": "D:\\vscode_portable\\PowerShell-x64\\pwsh.exe"
+  },
+  "powershell.powerShellDefaultVersion": "bundled-pwsh",
+  "powershell.integratedConsole.showOnStartup": false,
+
+  // Recommended settings for PowerShell
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": true,
+  "[powershell]": {
+    "files.trimTrailingWhitespace": true,
+    "files.encoding": "utf8bom",
+    "files.autoGuessEncoding": true,
+  },
+}
