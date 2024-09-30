@@ -25,9 +25,10 @@ The benefit to use this portable development environment is providing a cleaner 
 
 1. The configuration file is at  **vscode_data\user-data\User\settings.json**, open it with a text editor and modify all absolute path value (default is written as `D:\\vscode_portable\\`) to match the actual path in your computer.
 
-2. Make sure the `data` folder symbolic link in **VSCode-win32-x64** folder is not broken (It will porint to upper directory **vscode_data**).
+2. Make sure the `data` folder symbolic link in **VSCode-win32-x64** folder is not broken (It will point to upper directory **vscode_data**).
 
 If not, recreate the symbolic link in **VSCode-win32-x64** folder:
+
 ```powershell
 rm data
 New-Item -ItemType SymbolicLink -Path data -Target .\..\vscode_data\
@@ -36,9 +37,16 @@ New-Item -ItemType SymbolicLink -Path data -Target .\..\vscode_data\
 3. Make sure the `VSCode` symbolic link in top directory is not broken (It will point to *VSCode-win32-x64/Code.exe*).
 
 If not, recreate the symbolic link in top folder:
+
 ```powershell
 rm VSCode
 New-Item -ItemType SymbolicLink -Path VSCode -Target .\VSCode-win32-x64\Code.exe
+```
+
+The **Update-SymLink.ps1** script on root folder can automate the above step 2 and 3, on cmd or Windows PowerShell with Administrator right (or turn on Developer mode in Settings in Windows10/11), run:
+
+```powershell
+.\PowerShell-x664\pwsh.exe -nop -c .\Update-SymLink.ps1 
 ```
 
 If you want to use Vim extension, be sure to un-comment the related setting below `// Vim extension settings`.
