@@ -3,7 +3,7 @@ $ErrorActionPreference = "Stop"
 
 try {
     Set-Location .\VSCode-win32-x64
-    if ( Test-Path data) { Remove-Item data }
+    if ( Test-Path data) { Remove-Item data -Force }
     New-Item -ItemType SymbolicLink -Path data -Target .\..\vscode_data\
 }
 catch {
@@ -14,7 +14,7 @@ catch {
 
 try {
     Set-Location ..
-    if (Test-Path VSCode) { Remove-Item VSCode }
+    if (Test-Path VSCode) { Remove-Item VSCode -Force }
     New-Item -ItemType SymbolicLink -Path VSCode -Target .\VSCode-win32-x64\Code.exe
 }
 catch {

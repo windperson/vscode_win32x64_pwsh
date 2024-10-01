@@ -25,6 +25,7 @@
   // },
 
   // Integrated terminal settings
+  "terminal.integrated.shellIntegration.enabled": true,
   "terminal.integrated.useWslProfiles": false,
   "terminal.integrated.env.windows": {
     "POWERSHELL_TELEMETRY_OPTOUT": "true",
@@ -33,8 +34,7 @@
     "PSModulePath": "D:\\vscode_portable\\pwsh_modules"
   },
   "terminal.integrated.profiles.windows": {
-    "PowerShell": null,
-    "bundled-pwsh": {
+    "PowerShell": {
       "title": "Bundled pwsh",
       "path": "D:\\vscode_portable\\PowerShell-x64\\pwsh.exe",
       "args": [
@@ -45,14 +45,18 @@
       ]
     }
   },
-  "terminal.integrated.defaultProfile.windows": "bundled-pwsh",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
 
   // PowerShell extension settings
   "powershell.powerShellAdditionalExePaths": {
     "bundled-pwsh": "D:\\vscode_portable\\PowerShell-x64\\pwsh.exe"
   },
+  "powershell.enableProfileLoading": true,
+  "powershell.enableReferencesCodeLens": true,
   "powershell.powerShellDefaultVersion": "bundled-pwsh",
   "powershell.integratedConsole.showOnStartup": false,
+  "powershell.scriptAnalysis.enable": true,
+  "powershell.scriptAnalysis.settingsPath": "D:\\VScode_portable\\pwsh-scripts\\PSScriptAnalyzerSettings.psd1",
 
   // Recommended settings for PowerShell
   "editor.renderWhitespace": "all",

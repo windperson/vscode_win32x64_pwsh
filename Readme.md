@@ -43,10 +43,10 @@ rm VSCode
 New-Item -ItemType SymbolicLink -Path VSCode -Target .\VSCode-win32-x64\Code.exe
 ```
 
-The **Update-SymLink.ps1** script on root folder can automate the above step 2 and 3, on cmd or Windows PowerShell with Administrator right (or turn on Developer mode in Settings in Windows10/11), run:
+The **Update-SymLinks.ps1** script in **pwsh-scripts** folder can automate the above step 2 and 3, on cmd or Windows PowerShell with Administrator right (or turn on Developer mode in Settings in Windows10/11), run:
 
 ```powershell
-.\PowerShell-x664\pwsh.exe -nop -c .\Update-SymLink.ps1 
+.\PowerShell-x64\pwsh.exe -nop -c .\pwsh-scripts\Update-SymLinks.ps1 
 ```
 
 If you want to use Vim extension, be sure to un-comment the related setting below `// Vim extension settings`.
