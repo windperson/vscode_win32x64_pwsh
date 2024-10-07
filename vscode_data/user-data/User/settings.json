@@ -40,8 +40,11 @@
       "args": [
         "-nol",
         "-nop",
+        "-noe",
         "-ex",
-        "Unrestricted"
+        "Unrestricted",
+        "-Command", 
+        "Invoke-expression \". d:\\vscode_portable\\pwsh-scripts\\Set-PwshTools.ps1\""
       ]
     }
   },
