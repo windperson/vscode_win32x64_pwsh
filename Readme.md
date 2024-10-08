@@ -62,7 +62,13 @@ Run `VSCode-win32-x64\Code.exe` or the **VSCode** symbolic link in root folder t
 
 This portable development environment has configure the **pwsh_modules** folder to be the first PowerShell module probing path, so we can use `Install-ModuleFast` cmdlet of [ModuleFast](https://github.com/JustinGrote/ModuleFast) to install PowerShell modules to **pwsh_modules** folder without polluting the host machine.
 
-For example, to install test framework [Pester](https://pester.dev/) and specify to install version v5.6.1 , in Integrated Terminal of VSCode, run:
+For example, to install [dumPS](https://github.com/deadlydog/PowerShell.dumPS) PowerShell module from PowerShell Gallery, in Integrated Terminal of VSCode, run:
+
+```powershell
+Install-ModuleFast -Name dumPS -Destination D:\vscode_portable\pwsh_modules
+```
+
+To install test framework [Pester](https://pester.dev/) from nuget.org and specify to install version v5.6.1 , in Integrated Terminal of VSCode, run:
 
 ```powershell
  @{ModuleName='Pester';ModuleVersion='5.6.1'} | Install-ModuleFast -Source api.nuget.org/v3 -Destination D:\vscode_portable\pwsh_modules

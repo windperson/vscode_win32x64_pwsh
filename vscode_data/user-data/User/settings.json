@@ -44,7 +44,7 @@
         "-ex",
         "Unrestricted",
         "-Command", 
-        "Invoke-expression \". d:\\vscode_portable\\pwsh-scripts\\Set-PwshTools.ps1\""
+        "Invoke-expression \". D:\\vscode_portable\\pwsh-scripts\\Set-PwshTools.ps1\""
       ]
     }
   },
