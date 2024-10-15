@@ -1,5 +1,14 @@
 cli-tools/*
 !cli-tools/Readme.md
+
+!cli-tools/dotnet/
+cli-tools/dotnet/*
+!cli-tools/dotnet/sdks
+cli-tools/dotnet/sdks/*
+!cli-tools/dotnet/sdks/8.0/
+cli-tools/dotnet/sdks/8.0/*
+!cli-tools/dotnet/sdks/8.0/Readme.md
+
 !cli-tools/nvim-win64
 cli-tools/nvim-win64/**/*
 !cli-tools/nvim-win64/Readme.md

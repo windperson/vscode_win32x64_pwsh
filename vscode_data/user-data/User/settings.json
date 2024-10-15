@@ -30,7 +30,8 @@
   "terminal.integrated.env.windows": {
     "POWERSHELL_TELEMETRY_OPTOUT": "true",
     "POWERSHELL_UPDATECHECK": "Off",
-    "PATH": "D:\\vscode_portable\\PortableGit\\bin;D:\\vscode_portable\\PortableGit\\cmd;${env:PATH}",
+    "DOTNET_CLI_TELEMETRY_OPTOUT": "true",
+    "PATH": "D:\\vscode_portable\\VSCode-win32-x64\\bin;D:\\vscode_portable\\PortableGit\\bin;D:\\vscode_portable\\PortableGit\\cmd;${env:PATH}",
     "PSModulePath": "D:\\vscode_portable\\pwsh_modules"
   },
   "terminal.integrated.profiles.windows": {
@@ -43,7 +44,7 @@
         "-noe",
         "-ex",
         "Unrestricted",
-        "-Command", 
+        "-Command",
         "Invoke-expression \". D:\\vscode_portable\\pwsh-scripts\\Set-PwshTools.ps1\""
       ]
     }
@@ -69,4 +70,17 @@
     "files.encoding": "utf8bom",
     "files.autoGuessEncoding": true,
   },
+
+  // C# extension settings
+  "dotnetAcquisitionExtension.sharedExistingDotnetPath": "D:\\vscode_portable\\cli-tools\\dotnet\\sdks\\8.0\\dotnet.exe",
+  "dotnetAcquisitionExtension.enableTelemetry": false,
+  "dotnetAcquisitionExtension.existingDotnetPath": [
+    {
+      "extensionId": "ms-dotnettools.csharp",
+      "path": "D:\\vscode_portable\\cli-tools\\dotnet\\sdks\\8.0\\dotnet.exe"
+    }
+  ],
+  "omnisharp.useModernNet": true,
+  "omnisharp.sdkPath": "D:\\vscode_portable\\cli-tools\\dotnet\\sdks\\8.0",
+  "omnisharp.sdkVersion": "8.0.403",
 }

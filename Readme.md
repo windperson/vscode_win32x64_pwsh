@@ -9,15 +9,19 @@ The benefit to use this portable development environment is providing a cleaner 
 - Windows 10 or Windows 11 x64 environment
 - Download the portable (zip) distribution from the release page:
   - [VSCode zip](https://code.visualstudio.com/download)
-  - [PowerShell v7.+ zip](https://github.com/PowerShell/PowerShell/releases/tag/v7.4.5)
+  - [PowerShell v7.+ stable release zip](https://github.com/PowerShell/PowerShell/releases/)
+  - [.NET v8.x SDK x64 zip](https://dotnet.microsoft.com/download/dotnet/8.0)
   - [Git Portable](https://git-scm.com/downloads/win)
   - (Optional) [NeoVim win64 zip](https://github.com/neovim/neovim/releases/tag/v0.10.1), [im-select x64 pre-build executable](https://github.com/daipeihust/im-select/tree/master/win/out/x64) if you want to use Vim extension in VSCode.
 - Extract the zip file to the desired location:
   - VSCode to **VSCode-win32-x64** folder, be sure to not overwrite the `data` folder symbolic link.
   - PowerShell to **PowerShell-x64** folder.
+  - .NET SDK to **cli-tools\dotnet\sdks\8.0** folder, and add this folder's absolute path to the `PATH` environment variable(either User Level or System Level are fine).
   - Git to **PortableGit** folder.
   - (Optional) Neovim to **cli-tools\nvim-win64** folder, and im-select.exe to **cli-tools** folder if you want to use Vim extension in VSCode.
 - Download latest [PowerShell for Visual Studio Code extension install file(*.vsix*)](https://github.com/PowerShell/vscode-powershell/releases/)
+- Download [**.NET Install Tool**](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.vscode-dotnet-runtime).
+- Download [**C# for Visual Studio Code** x64 version](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
 - (Optional) Download [Vim Visual Studio Code extension install file(*.vsix*)](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) if you want to use Vim extension in VSCode.
 - Download [ModuleFast v0.5.0 zip](https://github.com/JustinGrote/ModuleFast/releases/tag/v0.5.0) PowerShell module and extract to **pwsh_modules\ModuleFast\0.5.0** folder.
 
@@ -56,7 +60,8 @@ If you want to use Vim extension, be sure to un-comment and update the related s
 
 ## Start VSCode
 
-Run `VSCode-win32-x64\Code.exe` or the **VSCode** symbolic link in root folder to start the portable VSCode, and install the PowerShell and (Optional) Vim extensions from the ***.vsix*** files that download before.
+Run `VSCode-win32-x64\Code.exe` or the **VSCode** symbolic link in root folder to start the portable VSCode, and install the *PowerShell*, *.NET Install Tool*, *C# for Visual Studio Code*, and (Optional) *Vim* extensions from the ***.vsix*** files that download before.  
+([how to install VSCode extension from ***.vsix*** file](https://code.visualstudio.com/docs/editor/extension-marketplace#_install-from-a-vsix).)
 
 ## How to install PowerShell modules
 
