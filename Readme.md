@@ -12,7 +12,7 @@ The benefit to use this portable development environment is providing a cleaner 
   - [PowerShell v7.+ stable release zip](https://github.com/PowerShell/PowerShell/releases/)
   - [.NET v8.x SDK x64 zip](https://dotnet.microsoft.com/download/dotnet/8.0)
   - [Git Portable](https://git-scm.com/downloads/win)
-  - (Optional) [NeoVim win64 zip](https://github.com/neovim/neovim/releases/tag/v0.10.1), [im-select x64 pre-build executable](https://github.com/daipeihust/im-select/tree/master/win/out/x64) if you want to use Vim extension in VSCode.
+  - (Optional) [NeoVim win64 zip](https://github.com/neovim/neovim/releases/tag/v0.10.2), [im-select x64 pre-build executable](https://github.com/daipeihust/im-select/tree/master/win/out/x64) if you want to use Vim extension in VSCode.
 - Extract the zip file to the desired location:
   - VSCode to **VSCode-win32-x64** folder, be sure to not overwrite the `data` folder symbolic link.
   - PowerShell to **PowerShell-x64** folder.
