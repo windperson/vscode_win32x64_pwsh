@@ -55,8 +55,10 @@
   "powershell.powerShellAdditionalExePaths": {
     "bundled-pwsh": "D:\\vscode_portable\\PowerShell-x64\\pwsh.exe"
   },
+  "powershell.debugging.createTemporaryIntegratedConsole": true,
   "powershell.enableProfileLoading": true,
   "powershell.enableReferencesCodeLens": true,
+  "powershell.pester.useLegacyCodeLens": false,
   "powershell.powerShellDefaultVersion": "bundled-pwsh",
   "powershell.integratedConsole.showOnStartup": false,
   "powershell.scriptAnalysis.enable": true,
