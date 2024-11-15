@@ -85,4 +85,7 @@
   "omnisharp.useModernNet": true,
   "omnisharp.sdkPath": "D:\\vscode_portable\\cli-tools\\dotnet\\sdks\\8.0",
   "omnisharp.sdkVersion": "8.0.403",
+
+  // Don't mess our dev environment with nagging VSCode extension recommendations
+  "extensions.ignoreRecommendations": true
 }
