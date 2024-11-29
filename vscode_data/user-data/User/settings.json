@@ -76,6 +76,7 @@
   },
 
   // C# extension settings
+  "dotnet.dotnetPath": "D:\\vscode_portable\\cli-tools\\dotnet\\sdks\\8.0",
   "dotnetAcquisitionExtension.sharedExistingDotnetPath": "D:\\vscode_portable\\cli-tools\\dotnet\\sdks\\8.0\\dotnet.exe",
   "dotnetAcquisitionExtension.enableTelemetry": false,
   "dotnetAcquisitionExtension.existingDotnetPath": [
