@@ -32,7 +32,8 @@
     "POWERSHELL_UPDATECHECK": "Off",
     "DOTNET_CLI_TELEMETRY_OPTOUT": "true",
     "DOTNET_ROOT": "D:\\vscode_portable\\cli-tools\\dotnet\\sdks\\8.0",
-    "PATH": "D:\\vscode_portable\\VSCode-win32-x64\\bin;D:\\vscode_portable\\PortableGit\\bin;D:\\vscode_portable\\cli-tools;D:\\vscode_portable\\PortableGit\\cmd;${env:PATH}",
+    "PATH":
+    "D:\\vscode_portable\\VSCode-win32-x64\\bin;D:\\vscode_portable\\PortableGit\\bin;D:\\vscode_portable\\cli-tools;D:\\vscode_portable\\PortableGit\\cmd;D:\\vscode_portable\\cli-tools\\dotnet\\sdks\\8.0;${env:PATH}",
     "PSModulePath": "D:\\vscode_portable\\pwsh_modules"
   },
   "terminal.integrated.profiles.windows": {
