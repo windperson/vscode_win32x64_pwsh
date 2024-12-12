@@ -52,6 +52,7 @@
     }
   },
   "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.scrollback":20000,
 
   // PowerShell extension settings
   "powershell.powerShellAdditionalExePaths": {

@@ -26,3 +26,7 @@ function Touch ($file) {
         New-Item $file -ItemType File | Out-Null
     }
 }
+
+function Get-LoadedAssemblies {
+    [System.AppDomain]::CurrentDomain.GetAssemblies() | Where-Object Location | Sort-Object -Property FullName | Select-Object -Property FullName, Location
+}
