@@ -19,6 +19,7 @@
   //   "<C-d>": true,
   //   "<C-k>": false,
   //   "<C-p>": false,
+  //   "<C-r>": true,
   //   "<C-s>": false,
   //   "<C-w>": false,
   //   "<C-z>": false
