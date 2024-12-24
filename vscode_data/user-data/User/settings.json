@@ -1,4 +1,6 @@
 {
+  "update.mode": "none",
+  "telemetry.telemetryLevel": "off",
   "security.workspace.trust.enabled": false,
 
   // Integrated git settings
