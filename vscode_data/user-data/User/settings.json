@@ -34,9 +34,9 @@
     "POWERSHELL_TELEMETRY_OPTOUT": "true",
     "POWERSHELL_UPDATECHECK": "Off",
     "DOTNET_CLI_TELEMETRY_OPTOUT": "true",
-    "DOTNET_ROOT": "D:\\vscode_portable\\cli-tools\\dotnet\\sdks\\8.0",
+    "DOTNET_ROOT": "D:\\vscode_portable\\cli-tools\\dotnet\\sdks\\10.0",
     "PATH":
-    "D:\\vscode_portable\\VSCode-win32-x64\\bin;D:\\vscode_portable\\PortableGit\\bin;D:\\vscode_portable\\cli-tools;D:\\vscode_portable\\PortableGit\\cmd;D:\\vscode_portable\\cli-tools\\dotnet\\sdks\\8.0;${env:PATH}",
+    "D:\\vscode_portable\\VSCode-win32-x64\\bin;D:\\vscode_portable\\PortableGit\\bin;D:\\vscode_portable\\cli-tools;D:\\vscode_portable\\PortableGit\\cmd;D:\\vscode_portable\\cli-tools\\dotnet\\sdks\\10.0;${env:PATH}",
     "PSModulePath": "D:\\vscode_portable\\pwsh_modules"
   },
   "terminal.integrated.profiles.windows": {
@@ -81,18 +81,18 @@
   },
 
   // C# extension settings
-  "dotnet.dotnetPath": "D:\\vscode_portable\\cli-tools\\dotnet\\sdks\\8.0",
-  "dotnetAcquisitionExtension.sharedExistingDotnetPath": "D:\\vscode_portable\\cli-tools\\dotnet\\sdks\\8.0\\dotnet.exe",
+  "dotnet.dotnetPath": "D:\\vscode_portable\\cli-tools\\dotnet\\sdks\\10.0",
+  "dotnetAcquisitionExtension.sharedExistingDotnetPath": "D:\\vscode_portable\\cli-tools\\dotnet\\sdks\\10.0\\dotnet.exe",
   "dotnetAcquisitionExtension.enableTelemetry": false,
   "dotnetAcquisitionExtension.existingDotnetPath": [
     {
       "extensionId": "ms-dotnettools.csharp",
-      "path": "D:\\vscode_portable\\cli-tools\\dotnet\\sdks\\8.0\\dotnet.exe"
+      "path": "D:\\vscode_portable\\cli-tools\\dotnet\\sdks\\10.0\\dotnet.exe"
     }
   ],
   "omnisharp.useModernNet": true,
-  "omnisharp.sdkPath": "D:\\vscode_portable\\cli-tools\\dotnet\\sdks\\8.0",
-  "omnisharp.sdkVersion": "8.0.404",
+  "omnisharp.sdkPath": "D:\\vscode_portable\\cli-tools\\dotnet\\sdks\\10.0",
+  "omnisharp.sdkVersion": "10.0.401",
 
   // Don't mess our dev environment with nagging VSCode extension recommendations
   "extensions.ignoreRecommendations": true
