@@ -1,5 +1,5 @@
 cli-tools/*
-!cli-tools/Readme.md
+!cli-tools/README.md
 
 !cli-tools/dotnet/
 cli-tools/dotnet/*
@@ -11,20 +11,20 @@ cli-tools/dotnet/sdks/10.0/*
 
 !cli-tools/nvim-win64
 cli-tools/nvim-win64/**/*
-!cli-tools/nvim-win64/Readme.md
+!cli-tools/nvim-win64/README.md
 
 PortableGit/**/*
-!PortableGit/Readme.md
+!PortableGit/README.md
 
 PowerShell-x64/**/*
-!PowerShell-x64/Readme.md
+!PowerShell-x64/README.md
 
 pwsh_modules/**/*
-!pwsh_modules/Readme.md
+!pwsh_modules/README.md
 
 VSCode-win32-x64/**/*
 !VSCode-win32-x64/data
-!VSCode-win32-x64/Readme.md
+!VSCode-win32-x64/README.md
 
 vscode_data/*
 !vscode_data/Readme.md
@@ -33,3 +33,7 @@ vscode_data/user-data/*
 !vscode_data/user-data/User/
 vscode_data/user-data/User/*
 !vscode_data/user-data/User/settings.json
+!vscode_data/TMP/README.md
+
+dummy_userprofile/*
+!dummy_userprofile/README.md
